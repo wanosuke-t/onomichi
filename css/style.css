@@ -20,6 +20,11 @@
   }
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .link-text {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -32,6 +37,7 @@
 
 .button {
   display: inline-block;
+  color: #4a3636;
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
@@ -1915,6 +1921,7 @@ a {
   font-size: 28px;
   font-weight: 500;
   line-height: 125%; /* 35px */
+  line-break: loose;
 }
 @media screen and (min-width: 900px) {
   .spots__heading-text {
@@ -2211,6 +2218,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  color: #4a3636;
   font-size: 14px;
   font-weight: 700;
   -moz-text-align-last: left;
@@ -2849,6 +2857,9 @@ a {
   }
 }
 
+.contact__submit-button {
+  cursor: url("../img/cursor.svg") 15 0, auto;
+}
 @media screen and (min-width: 900px) {
   .contact__submit-button {
     padding-inline: 38px;

@@ -56,6 +56,11 @@ $fv-inner-width-pc: 848px;
   }
 }
 
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .link-text {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -71,6 +76,7 @@ $fv-inner-width-pc: 848px;
   $border-width-lg: 3px;
 
   display: inline-block;
+  color: $color--black;
   font-size: 16px;
   font-weight: 700;
   border-radius: 40px;
@@ -1795,6 +1801,7 @@ a {
   font-size: 28px;
   font-weight: 500;
   line-height: 125%; /* 35px */
+  line-break: loose;
 
   @include mq(pc) {
     font-size: 40px;
@@ -2080,6 +2087,7 @@ a {
 
 .qa__question-text {
   flex-grow: 1;
+  color: $color--black;
   font-size: 14px;
   font-weight: 700;
   text-align-last: left;
@@ -2670,6 +2678,8 @@ a {
 }
 
 .contact__submit-button {
+  cursor: url("../img/cursor.svg") 15 0, auto;
+
   @include mq(pc) {
     padding-inline: calc(40px - 2px);
   }
