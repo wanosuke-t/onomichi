@@ -480,7 +480,7 @@ a {
 .fv__image-food {
   position: absolute;
   z-index: 130;
-  bottom: -1px;
+  bottom: 0;
   left: 0;
   width: calc(90.26px / $fv-inner-width-sp * 100%);
 
@@ -494,7 +494,7 @@ a {
 .fv__image-cat-1 {
   position: absolute;
   z-index: 130;
-  bottom: 57px;
+  bottom: 58px;
   right: 0;
   width: calc(62px / $fv-inner-width-sp * 100%);
 
@@ -749,8 +749,8 @@ a {
     width: 80px;
     height: 60px;
     transform: rotate(8deg);
-    top: 36px;
-    right: 23px;
+    // top: 37px;
+    // right: 23px;
     background: url("../img/about-title-right.png") no-repeat center center /
       contain;
     z-index: 110;
@@ -767,7 +767,7 @@ a {
 
   &::before {
     transform: rotate(-8deg);
-    top: 38px;
+    top: 37px;
     left: 37px;
     background: url("../img/about-title-left.png") no-repeat center center /
       contain;
@@ -784,8 +784,8 @@ a {
 
   &::after {
     transform: rotate(8deg);
-    top: 36px;
-    right: 23px;
+    top: 35px;
+    right: 24px;
     background: url("../img/about-title-right.png") no-repeat center center /
       contain;
 
@@ -891,6 +891,8 @@ a {
 
   @include mq(pc) {
     margin-top: -5px;
+    // max-width: 1512px;
+    margin-inline: auto;
   }
 }
 
@@ -1005,7 +1007,7 @@ a {
     }
 
     &::after {
-      bottom: 0;
+      bottom: 3px;
       transform: translate(-50%, 100%);
 
       @include mq(pc) {
@@ -1086,6 +1088,12 @@ a {
   padding: 8px 12px;
   background: $color--white;
   width: fit-content;
+
+  &:hover {
+    .step__link-text {
+      color: $color--sub-1;
+    }
+  }
 }
 
 .step__link-icon {
@@ -1101,6 +1109,7 @@ a {
 .step__link-text {
   font-size: 14px;
   font-weight: 700;
+  transition: color 0.3s;
 
   @include mq(pc) {
     font-size: 16px;
@@ -1457,6 +1466,7 @@ a {
   overflow: hidden;
   border-radius: 8px;
   z-index: 40;
+  cursor: url("../img/cursor.svg") 15 0, auto;
 
   @include mq(pc) {
     max-width: 440px;
@@ -1771,13 +1781,14 @@ a {
   @include mq(pc) {
     display: flex;
     gap: 32px;
-    margin-left: calc(244px / 1513px * 100%);
-    margin-left: max(40px, 100% - (1513px - 244px));
-    margin-left: clamp(
-      40px,
-      calc((244 - 40) / (1513 - 900) * (100vw - 900px) + 40px),
-      244px
-    );
+    // margin-left: calc(244px / 1513px * 100%);
+    // margin-left: max(40px, 100% - (1513px - 244px));
+    // margin-left: clamp(
+    //   40px,
+    //   calc((244 - 40) / (1513 - 900) * (100vw - 900px) + 40px),
+    //   244px
+    // );
+    padding-left: max(30px, 50% - 513px);
   }
 }
 
@@ -1971,8 +1982,8 @@ a {
     height: 80px;
     background: $color--accent-2;
     border-radius: 50%;
-    top: auto;
-    bottom: -24px;
+    top: 508px;
+    cursor: url("../img/cursor.svg") 15 0, auto;
   }
 
   &::after {
@@ -1993,13 +2004,13 @@ a {
 
 .spots__swiper-button-prev {
   @include mq(pc) {
-    left: -48px;
+    left: max(70px, 50% - 472px);
   }
 }
 
 .spots__swiper-button-next {
   @include mq(pc) {
-    right: calc(50% - 304px);
+    right: max(70px, 50% - 472px);
 
     &::after {
       transform: translate(-50%, -50%) rotate(180deg);
@@ -2727,6 +2738,13 @@ a {
 }
 
 .footer__icon {
+  transition: transform 0.3s, filter 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+  }
+
   img {
     width: 32px;
 
@@ -2787,7 +2805,7 @@ a {
 }
 
 .footer__info {
-  padding: 23px 10px 30px;
+  padding: 22px 10px 30px;
   max-width: calc(280px + 10px * 2);
   margin-inline: auto;
 
@@ -2863,7 +2881,7 @@ a {
 
 .footer__pagetop {
   padding-top: 22px;
-  padding-bottom: 66px;
+  padding-bottom: 67px;
   text-align: center;
 
   @include mq(pc) {

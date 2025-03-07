@@ -11,6 +11,8 @@ const aboutSwiper = new Swiper(".about__swiper", {
   spaceBetween: 10,
   loop: true,
   speed: 5000,
+  centeredSlides: true,
+
   autoplay: {
     delay: 0,
     disableOnInteraction: false,
