@@ -67,6 +67,7 @@ $(function () {
     const modalLead = $(this).data("modal-lead");
     if (modalLead) {
       $(".modal__lead").html(modalLead);
+      modalImage.attr("alt", modalLead);
     }
 
     const modalDescription = $(this).data("modal-description");

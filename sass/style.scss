@@ -109,12 +109,10 @@ $fv-inner-width-pc: 848px;
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  // max-width: 190px;
   margin-inline: auto;
 
   @include mq(pc) {
     gap: 8px;
-    // max-width: 320px;
   }
 }
 
@@ -567,7 +565,7 @@ a {
     width: 250px;
     top: 60px;
     left: 50%;
-    transform: translateX(-778px);
+    transform: translateX(-777px);
   }
 
   @include mq(tb) {
@@ -605,7 +603,7 @@ a {
   @include mq(pc) {
     width: 480px;
     top: 154px;
-    transform: translateX(-616px);
+    transform: translateX(-614px);
   }
 
   @include mq(tb) {
@@ -624,7 +622,7 @@ a {
   @include mq(pc) {
     width: 480px;
     top: 153.07px;
-    transform: translateX(559px);
+    transform: translateX(560px);
   }
 
   @include mq(tb) {
@@ -643,7 +641,7 @@ a {
     width: 427px;
     top: 401px;
     left: 50%;
-    transform: translateX(-860px);
+    transform: translateX(-859px);
   }
 
   @include mq(tb) {
@@ -683,7 +681,7 @@ a {
     width: 101px;
     top: 681.32px;
     left: 50%;
-    transform: translateX(504px);
+    transform: translateX(505px);
   }
 
   @include mq(tb) {
@@ -698,9 +696,9 @@ a {
     display: block;
     position: absolute;
     width: 874px;
-    top: 687.33px;
+    top: 686px;
     left: 50%;
-    transform: translateX(447px);
+    transform: translateX(448px);
   }
 
   @include mq(tb) {
@@ -749,8 +747,6 @@ a {
     width: 80px;
     height: 60px;
     transform: rotate(8deg);
-    // top: 37px;
-    // right: 23px;
     background: url("../img/about-title-right.png") no-repeat center center /
       contain;
     z-index: 110;
@@ -774,7 +770,7 @@ a {
 
     @include mq(pc) {
       top: 49px;
-      left: 90px;
+      left: 91px;
     }
 
     @include mq(tb) {
@@ -790,8 +786,8 @@ a {
       contain;
 
     @include mq(pc) {
-      top: 54px;
-      right: 92px;
+      top: 55px;
+      right: 91px;
     }
 
     @include mq(tb) {
@@ -891,7 +887,6 @@ a {
 
   @include mq(pc) {
     margin-top: -5px;
-    // max-width: 1512px;
     margin-inline: auto;
   }
 }
@@ -1134,7 +1129,7 @@ a {
 
   @include mq(pc) {
     top: 60px;
-    transform: translateX(-262px);
+    transform: translateX(-261px);
     width: 460px;
   }
 
@@ -1172,7 +1167,7 @@ a {
   width: 94px;
 
   @include mq(pc) {
-    top: 103.97px;
+    top: 103px;
     transform: translateX(436px);
     width: 214px;
   }
@@ -1199,10 +1194,6 @@ a {
   @include mq(tb) {
     transform: translateX(370px);
   }
-
-  img {
-    transform: scaleX(-1);
-  }
 }
 
 .step__image-pawpads-2 {
@@ -1215,10 +1206,6 @@ a {
 
   @include mq(pc) {
     display: none;
-  }
-
-  img {
-    transform: scale(-1, -1);
   }
 }
 
@@ -1239,10 +1226,6 @@ a {
   @include mq(tb) {
     top: 600px;
     transform: translateX(-370px);
-  }
-
-  img {
-    transform: scaleY(-1);
   }
 }
 
@@ -1332,7 +1315,6 @@ a {
 
 .prizes__bg-triangle-right {
   right: 0;
-  transform: scaleX(-1);
 }
 
 .prizes__title {
@@ -1767,8 +1749,7 @@ a {
 
   &:after {
     bottom: 1px;
-    left: -6px;
-    transform: translateY(100%) scaleY(-1);
+    transform: translateY(100%) rotate(180deg);
   }
 }
 
@@ -1781,13 +1762,6 @@ a {
   @include mq(pc) {
     display: flex;
     gap: 32px;
-    // margin-left: calc(244px / 1513px * 100%);
-    // margin-left: max(40px, 100% - (1513px - 244px));
-    // margin-left: clamp(
-    //   40px,
-    //   calc((244 - 40) / (1513 - 900) * (100vw - 900px) + 40px),
-    //   244px
-    // );
     padding-left: max(30px, 50% - 513px);
   }
 }
@@ -1835,7 +1809,6 @@ a {
   @include mq(pc) {
     margin-top: 0;
     width: calc(100% - 56px - 32px);
-    // width: calc(100% - 56px);
     flex-grow: 1;
   }
 }
@@ -1903,7 +1876,7 @@ a {
     display: block;
     position: absolute;
     bottom: 0;
-    left: calc(50% - 722px);
+    left: calc(50% - 721px);
 
     img {
       width: 100px;
@@ -1996,8 +1969,6 @@ a {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background: url("../img/spots-arrow.png") no-repeat center center /
-        contain;
     }
   }
 }
@@ -2005,6 +1976,11 @@ a {
 .spots__swiper-button-prev {
   @include mq(pc) {
     left: max(70px, 50% - 472px);
+
+    &::after {
+      background: url("../img/spots-arrow-left.png") no-repeat center center /
+        contain;
+    }
   }
 }
 
@@ -2013,7 +1989,8 @@ a {
     right: max(70px, 50% - 472px);
 
     &::after {
-      transform: translate(-50%, -50%) rotate(180deg);
+      background: url("../img/spots-arrow-right.png") no-repeat center center /
+        contain;
     }
   }
 }
@@ -2204,7 +2181,7 @@ a {
 .info__box {
   border: 8px solid $color--white;
   background: rgba(255, 255, 255, 0.5);
-  padding: calc(24px - 8px) calc(23.5px - 8px) calc(40px - 8px);
+  padding: calc(24px - 8px) calc(23.5px - 8px) calc(39px - 8px);
 
   @include mq(pc) {
     padding: calc(40px - 8px) calc(56px - 8px) calc(54px - 8px);
@@ -2309,7 +2286,7 @@ a {
   background: url("../img/sp/info-bg.jpg") no-repeat center center / cover;
 
   @include mq(pc) {
-    margin-top: 120px;
+    margin-top: 119px;
     height: 400px;
     background: url("../img/info-bg.jpg") no-repeat center center / cover;
   }
@@ -2317,11 +2294,11 @@ a {
 
 // contact
 .contact {
-  padding-block: 39px 45px;
+  padding-block: 40px 45px;
   background: $color--white;
 
   @include mq(pc) {
-    padding-block: 120px 121px;
+    padding-block: 120px;
   }
 }
 
@@ -2354,7 +2331,7 @@ a {
     margin-top: 40px;
     max-width: 848px;
     margin-inline: auto;
-    gap: 22.5px;
+    gap: 23px;
   }
 }
 
@@ -2700,10 +2677,28 @@ a {
 
 // footer
 .footer {
+  position: relative;
+  overflow: hidden;
   padding-top: 40px;
 
   @include mq(pc) {
     padding-top: 120px;
+  }
+}
+
+.footer__pawpods {
+  display: none;
+
+  @include mq(pc) {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 80px;
+    left: calc(50% + 576px);
+  }
+
+  @include mq(tb) {
+    left: calc(50% + 376px);
   }
 }
 

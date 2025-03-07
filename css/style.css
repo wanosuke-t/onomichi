@@ -559,8 +559,8 @@ a {
     width: 250px;
     top: 60px;
     left: 50%;
-    -webkit-transform: translateX(-778px);
-            transform: translateX(-778px);
+    -webkit-transform: translateX(-777px);
+            transform: translateX(-777px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -606,8 +606,8 @@ a {
   .about__image-photo-left {
     width: 480px;
     top: 154px;
-    -webkit-transform: translateX(-616px);
-            transform: translateX(-616px);
+    -webkit-transform: translateX(-614px);
+            transform: translateX(-614px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -630,8 +630,8 @@ a {
   .about__image-photo-right {
     width: 480px;
     top: 153.07px;
-    -webkit-transform: translateX(559px);
-            transform: translateX(559px);
+    -webkit-transform: translateX(560px);
+            transform: translateX(560px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -653,8 +653,8 @@ a {
     width: 427px;
     top: 401px;
     left: 50%;
-    -webkit-transform: translateX(-860px);
-            transform: translateX(-860px);
+    -webkit-transform: translateX(-859px);
+            transform: translateX(-859px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -703,8 +703,8 @@ a {
     width: 101px;
     top: 681.32px;
     left: 50%;
-    -webkit-transform: translateX(504px);
-            transform: translateX(504px);
+    -webkit-transform: translateX(505px);
+            transform: translateX(505px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -722,10 +722,10 @@ a {
     display: block;
     position: absolute;
     width: 874px;
-    top: 687.33px;
+    top: 686px;
     left: 50%;
-    -webkit-transform: translateX(447px);
-            transform: translateX(447px);
+    -webkit-transform: translateX(448px);
+            transform: translateX(448px);
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -810,7 +810,7 @@ a {
 @media screen and (min-width: 900px) {
   .about__card::before {
     top: 49px;
-    left: 90px;
+    left: 91px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -827,8 +827,8 @@ a {
 }
 @media screen and (min-width: 900px) {
   .about__card::after {
-    top: 54px;
-    right: 92px;
+    top: 55px;
+    right: 91px;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1090px) {
@@ -1216,8 +1216,8 @@ a {
 @media screen and (min-width: 900px) {
   .step__image-map {
     top: 60px;
-    -webkit-transform: translateX(-262px);
-            transform: translateX(-262px);
+    -webkit-transform: translateX(-261px);
+            transform: translateX(-261px);
     width: 460px;
   }
 }
@@ -1264,7 +1264,7 @@ a {
 }
 @media screen and (min-width: 900px) {
   .step__image-cat-2 {
-    top: 103.97px;
+    top: 103px;
     -webkit-transform: translateX(436px);
             transform: translateX(436px);
     width: 214px;
@@ -1300,10 +1300,6 @@ a {
             transform: translateX(370px);
   }
 }
-.step__image-pawpads-1 img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
 
 .step__image-pawpads-2 {
   position: absolute;
@@ -1318,10 +1314,6 @@ a {
   .step__image-pawpads-2 {
     display: none;
   }
-}
-.step__image-pawpads-2 img {
-  -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1);
 }
 
 .step__image-pawpads-3 {
@@ -1347,10 +1339,6 @@ a {
     -webkit-transform: translateX(-370px);
             transform: translateX(-370px);
   }
-}
-.step__image-pawpads-3 img {
-  -webkit-transform: scaleY(-1);
-          transform: scaleY(-1);
 }
 
 .prizes {
@@ -1439,8 +1427,6 @@ a {
 
 .prizes__bg-triangle-right {
   right: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
 }
 
 .prizes__title {
@@ -1870,9 +1856,8 @@ a {
 }
 .spots:after {
   bottom: 1px;
-  left: -6px;
-  -webkit-transform: translateY(100%) scaleY(-1);
-          transform: translateY(100%) scaleY(-1);
+  -webkit-transform: translateY(100%) rotate(180deg);
+          transform: translateY(100%) rotate(180deg);
 }
 
 .spots__inner {
@@ -2024,7 +2009,7 @@ a {
     display: block;
     position: absolute;
     bottom: 0;
-    left: calc(50% - 722px);
+    left: calc(50% - 721px);
   }
   .spots__pawpods img {
     width: 100px;
@@ -2114,13 +2099,15 @@ a {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background: url("../img/spots-arrow.png") no-repeat center center/contain;
   }
 }
 
 @media screen and (min-width: 900px) {
   .spots__swiper-button-prev {
     left: max(70px, 50% - 472px);
+  }
+  .spots__swiper-button-prev::after {
+    background: url("../img/spots-arrow-left.png") no-repeat center center/contain;
   }
 }
 
@@ -2129,8 +2116,7 @@ a {
     right: max(70px, 50% - 472px);
   }
   .spots__swiper-button-next::after {
-    -webkit-transform: translate(-50%, -50%) rotate(180deg);
-            transform: translate(-50%, -50%) rotate(180deg);
+    background: url("../img/spots-arrow-right.png") no-repeat center center/contain;
   }
 }
 
@@ -2343,7 +2329,7 @@ a {
 .info__box {
   border: 8px solid #ffffff;
   background: rgba(255, 255, 255, 0.5);
-  padding: 16px 15.5px 32px;
+  padding: 16px 15.5px 31px;
 }
 @media screen and (min-width: 900px) {
   .info__box {
@@ -2476,19 +2462,19 @@ a {
 }
 @media screen and (min-width: 900px) {
   .info__background {
-    margin-top: 120px;
+    margin-top: 119px;
     height: 400px;
     background: url("../img/info-bg.jpg") no-repeat center center/cover;
   }
 }
 
 .contact {
-  padding-block: 39px 45px;
+  padding-block: 40px 45px;
   background: #ffffff;
 }
 @media screen and (min-width: 900px) {
   .contact {
-    padding-block: 120px 121px;
+    padding-block: 120px;
   }
 }
 
@@ -2522,7 +2508,7 @@ a {
     margin-top: 40px;
     max-width: 848px;
     margin-inline: auto;
-    gap: 22.5px;
+    gap: 23px;
   }
 }
 
@@ -2870,11 +2856,31 @@ a {
 }
 
 .footer {
+  position: relative;
+  overflow: hidden;
   padding-top: 40px;
 }
 @media screen and (min-width: 900px) {
   .footer {
     padding-top: 120px;
+  }
+}
+
+.footer__pawpods {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .footer__pawpods {
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: 80px;
+    left: calc(50% + 576px);
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1090px) {
+  .footer__pawpods {
+    left: calc(50% + 376px);
   }
 }
 
