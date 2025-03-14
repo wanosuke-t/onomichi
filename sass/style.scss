@@ -438,18 +438,108 @@ a {
   }
 }
 
+.fv__box {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 130;
+  text-align: center;
+  max-width: 160px;
+  width: 100%;
+  background: $color--white;
+  border-radius: 12.8px;
+  overflow: hidden;
+
+  @include mq(pc) {
+    top: calc(50% - 95px);
+    max-width: 200px;
+    border-radius: 16px;
+  }
+}
+
+.fv__box-title {
+  padding: 6.4px 9.6px;
+  color: $color--white;
+  font-size: 12.8px;
+  font-weight: 700;
+  background: linear-gradient(
+    265deg,
+    #ac3790 -3.52%,
+    #d65a5c 44.94%,
+    #f4c06d 92.38%
+  );
+
+  @include mq(pc) {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+.fv__box-content {
+  text-align: center;
+  padding-block: 12.8px 19.2px;
+
+  @include mq(pc) {
+    padding-block: 15px 24px;
+  }
+}
+
+.fv__text {
+  display: inline-block;
+  color: $color--black;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 3px solid $color--accent-1;
+
+  @include mq(pc) {
+    font-size: 14px;
+  }
+}
+
+.fv__date {
+  margin-top: 3px;
+  color: $color--black;
+  font-size: 12px;
+  font-weight: 700;
+
+  @include mq(pc) {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+}
+
+.fv__button {
+  margin-top: 12.8px;
+
+  @include mq(pc) {
+    margin-top: 16px;
+  }
+
+  a {
+    @include mq(sp) {
+      padding: 2px 22px 4px;
+    }
+
+    @include mq(pc) {
+      font-size: 16px;
+    }
+  }
+}
+
 .fv__image-smartphone {
   position: relative;
   margin-inline: auto;
   z-index: 120;
   padding-top: 103px;
   padding-bottom: 11px;
-  width: calc(200px / $fv-inner-width-sp * 100%);
+  max-width: 200px;
+  width: 100%;
 
   @include mq(pc) {
     padding-top: 33px;
     padding-bottom: 17px;
-    width: calc(250px / $fv-inner-width-pc * 100%);
+    max-width: 250px;
   }
 }
 
@@ -458,7 +548,7 @@ a {
   z-index: 110;
   top: 7px;
   left: 0;
-  width: calc(142px / $fv-inner-width-sp * 100%);
+  width: 142px;
 
   @include mq(pc) {
     top: 0;
@@ -472,7 +562,7 @@ a {
   z-index: 110;
   top: 0;
   right: calc(25px / $fv-inner-width-sp * 100%);
-  width: calc(110px / $fv-inner-width-sp * 100%);
+  width: 110px;
 
   @include mq(pc) {
     top: 17px;
@@ -486,7 +576,7 @@ a {
   z-index: 130;
   bottom: 0;
   left: 0;
-  width: calc(90.26px / $fv-inner-width-sp * 100%);
+  width: 90.26px;
 
   @include mq(pc) {
     bottom: 1px;
@@ -500,7 +590,7 @@ a {
   z-index: 130;
   bottom: 58px;
   right: 0;
-  width: calc(62px / $fv-inner-width-sp * 100%);
+  width: 62px;
 
   @include mq(pc) {
     bottom: 61px;
@@ -514,7 +604,7 @@ a {
   z-index: 140;
   bottom: 0;
   right: calc(9px / $fv-inner-width-sp * 100%);
-  width: calc(98px / $fv-inner-width-sp * 100%);
+  width: 98px;
 
   @include mq(pc) {
     bottom: -43px;

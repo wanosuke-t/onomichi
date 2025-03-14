@@ -421,19 +421,111 @@ a {
   }
 }
 
+.fv__box {
+  position: absolute;
+  top: calc(50% - 36px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 130;
+  text-align: center;
+  max-width: 160px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 12.8px;
+  overflow: hidden;
+}
+@media screen and (min-width: 900px) {
+  .fv__box {
+    top: calc(50% - 95px);
+    max-width: 200px;
+    border-radius: 16px;
+  }
+}
+
+.fv__box-title {
+  padding: 6.4px 9.6px;
+  color: #ffffff;
+  font-size: 12.8px;
+  font-weight: 700;
+  background: linear-gradient(265deg, #ac3790 -3.52%, #d65a5c 44.94%, #f4c06d 92.38%);
+}
+@media screen and (min-width: 900px) {
+  .fv__box-title {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+}
+
+.fv__box-content {
+  text-align: center;
+  padding-block: 12.8px 19.2px;
+}
+@media screen and (min-width: 900px) {
+  .fv__box-content {
+    padding-block: 15px 24px;
+  }
+}
+
+.fv__text {
+  display: inline-block;
+  color: #4a3636;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 3px solid #ce2073;
+}
+@media screen and (min-width: 900px) {
+  .fv__text {
+    font-size: 14px;
+  }
+}
+
+.fv__date {
+  margin-top: 3px;
+  color: #4a3636;
+  font-size: 12px;
+  font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .fv__date {
+    margin-top: 4px;
+    font-size: 16px;
+  }
+}
+
+.fv__button {
+  margin-top: 12.8px;
+}
+@media screen and (min-width: 900px) {
+  .fv__button {
+    margin-top: 16px;
+  }
+}
+@media not screen and (min-width: 900px) {
+  .fv__button a {
+    padding: 2px 22px 4px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .fv__button a {
+    font-size: 16px;
+  }
+}
+
 .fv__image-smartphone {
   position: relative;
   margin-inline: auto;
   z-index: 120;
   padding-top: 103px;
   padding-bottom: 11px;
-  width: 59.7014925373%;
+  max-width: 200px;
+  width: 100%;
 }
 @media screen and (min-width: 900px) {
   .fv__image-smartphone {
     padding-top: 33px;
     padding-bottom: 17px;
-    width: 29.4811320755%;
+    max-width: 250px;
   }
 }
 
@@ -442,7 +534,7 @@ a {
   z-index: 110;
   top: 7px;
   left: 0;
-  width: 42.3880597015%;
+  width: 142px;
 }
 @media screen and (min-width: 900px) {
   .fv__image-fukidashi {
@@ -457,7 +549,7 @@ a {
   z-index: 110;
   top: 0;
   right: 7.4626865672%;
-  width: 32.8358208955%;
+  width: 110px;
 }
 @media screen and (min-width: 900px) {
   .fv__image-present {
@@ -472,7 +564,7 @@ a {
   z-index: 130;
   bottom: 0;
   left: 0;
-  width: 26.9432835821%;
+  width: 90.26px;
 }
 @media screen and (min-width: 900px) {
   .fv__image-food {
@@ -487,7 +579,7 @@ a {
   z-index: 130;
   bottom: 58px;
   right: 0;
-  width: 18.5074626866%;
+  width: 62px;
 }
 @media screen and (min-width: 900px) {
   .fv__image-cat-1 {
@@ -502,7 +594,7 @@ a {
   z-index: 140;
   bottom: 0;
   right: 2.6865671642%;
-  width: 29.2537313433%;
+  width: 98px;
 }
 @media screen and (min-width: 900px) {
   .fv__image-cat-2 {
